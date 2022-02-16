@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+
+.container{
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    margin-top: 52px;
+}
+
+.grey-bg{
+    background-color: hsl(0, 5%, 92%);;
+}
+
+.row{
+    display: flex;
+}
+
+.row-item{
+    margin: 15px;
+}
+
+.hero-image{
+    width: 100%;
+}
+
+
+.title{
+    color: hsl(255, 11%, 22%);
+    font-weight: 700;
+}
+
+.subtitle{
+    color: hsl(257, 7%, 63%);
+    font-weight: 500;
+}
+
+.str{
+    font-size: 60px;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    border: 3px solid hsl(180, 66%, 49%);
+    background-color: transparent;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.button:hover{
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.box{
+    width: 350px;
+    height: auto;
+    padding: 30px;
+    background-color: white;
+    margin: 15px 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.alt:nth-child(2){
+    margin-top: 45px;
+}
+.alt:nth-child(3){
+    margin-top: 75px;
+}
+
+.border{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(257, 27%, 26%);
+}
+
+.bg-img{
+    background-image: url('img/bg-boost-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    background-color: hsl(257, 27%, 26%);
+    margin: 0;
+}
+
+.app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-image{
+    width: 100%;
+    height: 200px;
+    background-image: url('img/bg-shorten-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 15px;
+}
+
+#inputValue{
+    width: 700px;
+    height: 50px;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+}
+
+
+input[type="submit"]{
+    width: 200px;
+    height: 50px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.short-link{
+    width: 100%;
+    height: 70px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.generated-link{
+    color: hsl(180, 66%, 49%);
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.copy-button{
+    width: 100px;
+    height: 50px;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 1100px){
+    .row:nth-child(3){
+        flex-direction: column;
+    }
+    .bg-img{
+        background-image: url('img/bg-boost-mobile.svg');
+        height: 300px;
+    }
+    .bg-image{
+        background-image: url('img/bg-shorten-mobile.svg');
+        height: 300px;
+    }
+    #inputValue {
+        width: 100%;
+    }
+    #target{
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+    .short-link{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+    }
+}
+
+h5{
+    color: hsl(257, 27%, 26%);
+}
+
+h5 a{
+    color: royalblue;
+}
+
+@media (max-width: 900px){
+    main{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row-item{
+        margin: 15px 0;
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .str{
+        font-size: 40px;
+        text-align: center;
+    }
+    .subtitle{
+        font-size: 15px;
+        text-align: center;
+    }
+    .button{
+        width: 200px;
+        margin: auto;
+    }
+}
