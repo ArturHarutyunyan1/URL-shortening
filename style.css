@@ -192,6 +192,7 @@ input[type="submit"]{
     border: none;
     outline: none;
     font-size: 20px;
+    background-color: transparent;
 }
 
 .copy-button{
